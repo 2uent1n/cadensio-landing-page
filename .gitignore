@@ -19,11 +19,8 @@
 **/*.launch
 **/.settings/
 **/*.sublime-workspace
-
-# Visual Studio Code
 **/.vscode/*
 **/.history/*
-**/.turbo/
 
 # Miscellaneous
 **/.angular/cache
@@ -37,6 +34,7 @@
 **/.env
 **/.env.prod
 **/build
+**/.turbo/
 **/.astro
 **/.vercel
 

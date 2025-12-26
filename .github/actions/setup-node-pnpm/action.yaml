@@ -1,0 +1,22 @@
+name: 'Setup Node.js and pnpm'
+description: 'Configure Node.js and pnpm with standard settings'
+
+inputs:
+  packages:
+    description: 'Space-separated list of packages to install with pnpm'
+    required: false
+    default: ''
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    - name: Setup pnpm and Install Dependencies
+      uses: pnpm/action-setup@v4
+      with:
+        version: 10.26.2
+        run_install: true
